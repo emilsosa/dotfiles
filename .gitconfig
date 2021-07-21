@@ -1,0 +1,13 @@
+[alias]
+	co = checkout
+	checkout = co
+	status = st
+	br = branch
+	st = status
+	merge = merge --no-edit
+[user]
+	name = Emil Sosa
+	email = emiil.sosa@gmail.com
+[core]
+	mergeoptions = --no-edit
+
