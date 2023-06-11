@@ -4,9 +4,6 @@ source ~/.antigen/antigen.zsh
 # Load Antigen configurations
 antigen init ~/.antigenrc
 
-eval $(thefuck --alias)
-eval $(thefuck --alias fk)
-
 export LANG=en_US.UTF-8
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
