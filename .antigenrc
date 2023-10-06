@@ -6,6 +6,7 @@ antigen bundle git
 antigen bundle git-extras
 antigen bundle command-not-found
 antigen bundle nvm
+antigen bundle tmux
 antigen bundle zsh_reload
 antigen bundle rbenv
 antigen bundle ssh-agent
