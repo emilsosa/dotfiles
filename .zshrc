@@ -12,6 +12,7 @@ export EDITOR=vim
 
 alias cls='printf "\033c"'
 
+source ~/.zshrc_hooks
 if [ -f ~/.environment ]; then
 	source ~/.environment
 fi
