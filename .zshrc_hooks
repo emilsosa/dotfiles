@@ -1,5 +1,5 @@
 auto-nvm-use() {
-  if [[ $PWD/ = /Users/emilsosa/Projects/* ]]; then
+  if [[ $PWD/ = $HOME/Projects/* ]]; then
     local nvmrc_path="$(nvm_find_nvmrc)"
 
     if [ -n "$nvmrc_path" ]; then
