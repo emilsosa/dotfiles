@@ -1,9 +1,11 @@
 auto-nvm-use() {
   if [[ $PWD/ = $HOME/Projects/* ]]; then
-    local nvmrc_path="$(nvm_find_nvmrc)"
+    if test -f "package.json"; then
+      local nvmrc_path="$(nvm_find_nvmrc)"
 
-    if [ -n "$nvmrc_path" ]; then
-      nvm use
+      if [ -n "$nvmrc_path" ]; then
+        nvm use
+      fi
     fi
   fi
 }
