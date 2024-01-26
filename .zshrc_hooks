@@ -7,6 +7,10 @@ auto-nvm-use() {
         nvm use
       fi
     fi
+
+    if test -f ".sdkmanrc"; then
+      sdk env
+    fi
   fi
 }
 
