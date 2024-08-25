@@ -3,6 +3,7 @@ source ~/.antigen/antigen.zsh
 
 # Keybindings
 bindkey "^O" autosuggest-accept
+bindkey '^r' fzf-history-widget
 
 # Load Antigen configurations
 antigen init ~/.antigenrc
