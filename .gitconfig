@@ -5,6 +5,7 @@
 	br = branch
 	st = status
 	merge = merge --no-edit
+
 [user]
 	name = Emil Sosa
 	email = emiil.sosa@gmail.com
