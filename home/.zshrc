@@ -22,8 +22,6 @@ if [ -f ~/.environment ]; then
 	source ~/.environment
 fi
 
-
-
 # Alises
 alias cls='printf "\033c"'
 alias ff='find . -type f | fzf | xargs -I {} sh -c 'open "$(dirname "{}")"''
