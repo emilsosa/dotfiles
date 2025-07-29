@@ -1,0 +1,105 @@
+source ~/.vimrc
+
+let mapleader=" "
+
+set scroll=6
+
+set relativenumber
+set number
+set visualbell
+
+set ideajoin
+set ideamarks
+set ideastatusicon=gray
+set idearefactormode=keep
+set which-key
+set easymotion
+set NERDTree
+
+" Copy to main clipboard
+set clipboard=unnamedplus
+
+set notimeout
+set highlightedyank
+" set incsearch
+
+let g:highlightedyank_highlight_duration = "100"
+let g:highlightedyank_highlight_color = "rgba(57, 197, 187, 155)"
+
+
+" Intellij IDEA keybindings
+
+" Move between editor with control + hjkl
+nmap <C-H> <C-W>h
+nmap <C-J> <C-W>j
+nmap <C-K> <C-W>k
+nmap <C-L> <C-W>l
+" Accept copilot suggestion in insert mode
+imap <C-J> <Action>(copilot.applyInlays)
+imap <C-K> <Action>(copilot.applyInlaysNextWord)
+
+" Split windows
+nmap <leader>sv <Action>(SplitVertically)
+nmap <leader>sh <Action>(SplitHorizontally)
+
+" Show Intentions while in insert mode
+imap <C-C> <Action>(ShowIntentionActions)
+
+nmap [e <Action>(GotoNextError)
+nmap ]e <Action>(GotoPreviousError)
+nmap [o <Action>(PreviousOccurence)
+nmap ]o <Action>(NextOccurence)
+
+nmap <leader>ha <Action>(HideAllWindows)
+nmap <leader>e <Action>(ActivateProjectToolWindow)
+nmap <leader>he <Action>(HideActiveWindow)
+nmap <leader>z <Action>(ToggleDistractionFreeMode)
+nmap <leader>le <Action>(JumpToLastChange)
+nmap <leader>s <Action>(SelectIn)
+nmap <leader>/ <Action>(FindInPath)
+
+vmap gc <Action>(CommentByLineComment)<Esc>
+
+nmap s <Plug>(easymotion-s)
+nmap <leader>? <Action>(ParameterInfo)
+
+nmap <leader>bud <Action>(CompileDirty)
+nmap <leader>buc <Action>(Compile)
+nmap <leader>bum <Action>(BuildMenu)
+
+nmap <leader>bd <Action>(CloseEditor)
+nmap <leader>br <Action>(CloseAllToTheRight)
+nmap <leader>bl <Action>(CloseAllToTheLeft)
+nmap <leader>bo <Action>(CloseAllEditorsButActive)
+nmap <leader>bp <Action>(ToggleLineBreakpoint)
+
+nmap <leader>t <Action>(GotoTest)
+
+" Run configurations
+nmap <leader>rc <Action>(RunClass)
+nmap <leader>rr <Action>(Run)
+nmap <leader>rd <Action>(Debug)
+nmap <leader>rad <Action>(XDebugger.AttachToProcess)
+
+" Copilot keymappings
+nmap <leader>cod <Action>(copilot.disableCopilot)
+nmap <leader>coe <Action>(copilot.enableCopilot)
+nmap <leader>coc <Action>(copilot.chat.show)
+" Code actions
+nmap <leader>ca <Action>(ShowIntentionActions)
+nmap <leader>cf <Action>(ReformatCode)
+nmap <leader>cr <Action>(RenameElement)
+nmap <leader>ci <Action>(QuickImplementations)
+nmap <leader>pi <Action>(ParameterInfo)
+nmap <S-K> <Action>(ShowHoverInfo)
+
+nmap <leader>ff <Action>(GotoFile)
+nmap <leader>fs <Action>(GotoSymbol)
+nmap <leader>fa <Action>(GotoAction)
+nmap <leader>fe <Action>(SearchEverywhere)
+
+nmap <leader>nc <Action>(Scala.NewClass)
+
+nmap <leader>os <Action>(SelectIn)
+nmap <leader>h <Action(ShowBookmarks)
+
