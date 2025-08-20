@@ -72,6 +72,7 @@ nmap <leader>br <Action>(CloseAllToTheRight)
 nmap <leader>bl <Action>(CloseAllToTheLeft)
 nmap <leader>bo <Action>(CloseAllEditorsButActive)
 nmap <leader>bp <Action>(ToggleLineBreakpoint)
+nmap <leader>ghr <Action>(Vcs.RollbackChangedLines)
 
 nmap <leader>t <Action>(GotoTest)
 
